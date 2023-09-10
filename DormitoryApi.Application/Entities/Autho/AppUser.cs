@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using DormitoryApi.Application.Entities.Context;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,9 @@ namespace DormitoryApi.Application.Entities.Autho
         public DateTime BirthDate { get; set; }
         public string? RefreshToken { get; set; }
         public DateTime? RefreshTokenEndTime { get; set; }
+
+        public ICollection<Student> Students { get; set; }
+        public ICollection<Staff> Staffs { get; set; }
     }
 
     public class AppRole : IdentityRole<string>

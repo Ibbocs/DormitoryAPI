@@ -7,17 +7,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{AF6EB1CB-9
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{FF34DA51-FC5A-41BA-8DEA-043228D5A675}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{9556C00B-841A-4455-8D51-1AFD94858334}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DormitoryApi.Domain", "DormitoryApi.Domain\DormitoryApi.Domain.csproj", "{DCE03227-C791-4971-A576-A2F6B969575E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DormitoryApi.Presentation", "DormitoryApi.Presentation\DormitoryApi.Presentation.csproj", "{D46556E9-0BE0-4347-A338-6538474BC318}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DormitoryApi.Application", "DormitoryApi.Application\DormitoryApi.Application.csproj", "{7C388FAD-DBCF-4BD8-9BB2-AE4E98931314}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DormitoryApi.Domain", "DormitoryApi.Domain\DormitoryApi.Domain.csproj", "{DCE03227-C791-4971-A576-A2F6B969575E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DormitoryApi.Infrastructure", "DormitoryApi.Infrastructure\DormitoryApi.Infrastructure.csproj", "{A9703A4F-844C-425F-AA03-10E328E2EB7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DormitoryApi.Application", "DormitoryApi.Application\DormitoryApi.Application.csproj", "{7C388FAD-DBCF-4BD8-9BB2-AE4E98931314}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DormitoryApi.Persistance", "DormitoryApi.Persistance\DormitoryApi.Persistance.csproj", "{39DFEB56-D91B-492D-9895-C383166D9F7E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DormitoryApi.Infrastructure", "DormitoryApi.Infrastructure\DormitoryApi.Infrastructure.csproj", "{A9703A4F-844C-425F-AA03-10E328E2EB7B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{CD0E1965-BF58-4D06-9C94-BCB22E2051F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DormitoryApi.Persistance", "DormitoryApi.Persistance\DormitoryApi.Persistance.csproj", "{39DFEB56-D91B-492D-9895-C383166D9F7E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DormitoryAPI.Presentation", "DormitoryAPI.Presentation\DormitoryAPI.Presentation.csproj", "{82AABBF3-C8A0-41DC-B2C8-10D7F4DA4D2C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +25,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D46556E9-0BE0-4347-A338-6538474BC318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D46556E9-0BE0-4347-A338-6538474BC318}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D46556E9-0BE0-4347-A338-6538474BC318}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D46556E9-0BE0-4347-A338-6538474BC318}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DCE03227-C791-4971-A576-A2F6B969575E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DCE03227-C791-4971-A576-A2F6B969575E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DCE03227-C791-4971-A576-A2F6B969575E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -45,16 +41,20 @@ Global
 		{39DFEB56-D91B-492D-9895-C383166D9F7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39DFEB56-D91B-492D-9895-C383166D9F7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39DFEB56-D91B-492D-9895-C383166D9F7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82AABBF3-C8A0-41DC-B2C8-10D7F4DA4D2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82AABBF3-C8A0-41DC-B2C8-10D7F4DA4D2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82AABBF3-C8A0-41DC-B2C8-10D7F4DA4D2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82AABBF3-C8A0-41DC-B2C8-10D7F4DA4D2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{D46556E9-0BE0-4347-A338-6538474BC318} = {9556C00B-841A-4455-8D51-1AFD94858334}
 		{DCE03227-C791-4971-A576-A2F6B969575E} = {AF6EB1CB-98BF-4CF3-A4C7-BBFC1E3FE35C}
 		{7C388FAD-DBCF-4BD8-9BB2-AE4E98931314} = {AF6EB1CB-98BF-4CF3-A4C7-BBFC1E3FE35C}
 		{A9703A4F-844C-425F-AA03-10E328E2EB7B} = {FF34DA51-FC5A-41BA-8DEA-043228D5A675}
 		{39DFEB56-D91B-492D-9895-C383166D9F7E} = {FF34DA51-FC5A-41BA-8DEA-043228D5A675}
+		{82AABBF3-C8A0-41DC-B2C8-10D7F4DA4D2C} = {CD0E1965-BF58-4D06-9C94-BCB22E2051F8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A2953A34-D8D6-4A65-8859-08BB5CC55BF6}
