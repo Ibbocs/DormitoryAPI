@@ -1,5 +1,5 @@
-﻿using DormitoryApi.Application.Entities.Autho;
-using DormitoryApi.Application.Entities.Context;
+﻿using DormitoryApi.Domain.Entities.Autho;
+using DormitoryApi.Domain.Entities.Context;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;

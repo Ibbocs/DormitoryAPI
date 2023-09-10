@@ -1,4 +1,4 @@
-﻿using DormitoryApi.Application.Entities.Autho;
+﻿using DormitoryApi.Domain.Entities.Autho;
 using DormitoryApi.Persistance.Configurations;
 using DormitoryApi.Persistance.Context;
 using Microsoft.EntityFrameworkCore;

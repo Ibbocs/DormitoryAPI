@@ -1,4 +1,4 @@
-﻿using DormitoryApi.Application.Entities.Context;
+﻿using DormitoryApi.Domain.Entities.Context;
 using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DormitoryApi.Application.Entities.Autho
+namespace DormitoryApi.Domain.Entities.Autho
 {
     public class AppUser : IdentityUser<string>
     {

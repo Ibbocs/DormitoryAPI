@@ -1,5 +1,5 @@
-﻿using DormitoryApi.Application.Entities.Autho;
-using DormitoryApi.Application.Entities.Common;
+﻿using DormitoryApi.Domain.Entities.Autho;
+using DormitoryApi.Domain.Entities.Common;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -9,9 +9,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DormitoryApi.Application.Entities.Context
+namespace DormitoryApi.Domain.Entities.Context
 {
-    public class Dormitory:BaseEntity
+    public class Dormitory : BaseEntity
     {
         //public int DormitoryID { get; set; }
         public string Name { get; set; }
@@ -24,7 +24,7 @@ namespace DormitoryApi.Application.Entities.Context
         public List<Floor> Floors { get; set; }
     }
 
-    public class Student:BaseEntity
+    public class Student : BaseEntity
     {
         //public int StudentID { get; set; }
         //public string FirstName { get; set; }
@@ -50,7 +50,7 @@ namespace DormitoryApi.Application.Entities.Context
     }
 
     // Yatak (Beds) Tablosu
-    public class Bed:BaseEntity
+    public class Bed : BaseEntity
     {
         //public int BedID { get; set; }
         public bool Occupied { get; set; }
@@ -64,7 +64,7 @@ namespace DormitoryApi.Application.Entities.Context
     }
 
     // Personel (Staff) Tablosu
-    public class Staff:BaseEntity
+    public class Staff : BaseEntity
     {
         //public int StaffID { get; set; }
         //public string FirstName { get; set; }
@@ -79,7 +79,7 @@ namespace DormitoryApi.Application.Entities.Context
     }
 
     // Oda (Rooms) Tablosu
-    public class Room :BaseEntity
+    public class Room : BaseEntity
     {
         //public int RoomID { get; set; }
         public string RoomNumber { get; set; }

@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DormitoryApi.Application\DormitoryApi.Application.csproj" />
+    <ProjectReference Include="..\DormitoryApi.Domain\DormitoryApi.Domain.csproj" />
   </ItemGroup>
 
 </Project>
