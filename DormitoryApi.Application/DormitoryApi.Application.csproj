@@ -23,7 +23,6 @@
     <Folder Include="Abstraction\Services\Infrastructure\" />
     <Folder Include="Extentions\" />
     <Folder Include="Validation\" />
-    <Folder Include="UnitOfWork\" />
   </ItemGroup>
 
 </Project>
