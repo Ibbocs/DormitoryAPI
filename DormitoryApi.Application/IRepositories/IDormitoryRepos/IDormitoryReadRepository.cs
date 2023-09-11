@@ -11,8 +11,4 @@ namespace DormitoryApi.Application.IRepositories.IDormitoryRepos
     public interface IDormitoryReadRepository : IRepositoryRead<Dormitory>
     {
     }
-
-    public interface IDormitoryWriteRepository : IRepositoryWrite<Dormitory>
-    {
-    }
 }

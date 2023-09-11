@@ -11,8 +11,4 @@ namespace DormitoryApi.Application.IRepositories.IStudentRepos
     public interface IStudentReadRepository : IRepositoryRead<Student>
     {
     }
-
-    public interface IStudentWriteRepository : IRepositoryWrite<Student>
-    {
-    }
 }

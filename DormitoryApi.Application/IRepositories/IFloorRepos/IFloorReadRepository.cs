@@ -11,8 +11,4 @@ namespace DormitoryApi.Application.IRepositories.IFloorRepos
     public interface IFloorReadRepository : IRepositoryRead<Floor>
     {
     }
-
-    public interface IFloorWriteRepository : IRepositoryWrite<Floor>
-    {
-    }
 }

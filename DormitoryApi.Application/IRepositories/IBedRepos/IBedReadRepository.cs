@@ -12,8 +12,4 @@ namespace DormitoryApi.Application.IRepositories.IBedRepos
     public interface IBedReadRepository : IRepositoryRead<Bed>
     {
     }
-
-    public interface IBedWriteRepository : IRepositoryWrite<Bed>
-    {
-    }
 }

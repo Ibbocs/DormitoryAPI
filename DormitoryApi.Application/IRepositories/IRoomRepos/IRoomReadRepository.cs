@@ -11,8 +11,4 @@ namespace DormitoryApi.Application.IRepositories.IRoomRepos
     public interface IRoomReadRepository : IRepositoryRead<Room>
     {
     }
-
-    public interface IRoomWriteRepository : IRepositoryWrite<Room>
-    {
-    }
 }

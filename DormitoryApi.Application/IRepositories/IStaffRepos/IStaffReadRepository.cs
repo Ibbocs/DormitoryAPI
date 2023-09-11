@@ -11,8 +11,4 @@ namespace DormitoryApi.Application.IRepositories.IStaffRepos
     public interface IStaffReadRepository : IRepositoryRead<Staff>
     {
     }
-
-    public interface IStaffWriteRepository : IRepositoryWrite<Staff>
-    {
-    }
 }

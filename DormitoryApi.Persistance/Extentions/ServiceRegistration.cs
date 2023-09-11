@@ -1,4 +1,18 @@
-﻿using DormitoryApi.Domain.Entities.Autho;
+﻿using DormitoryApi.Application.IRepositories.IBedRepos;
+using DormitoryApi.Application.IRepositories.IDormitoryRepos;
+using DormitoryApi.Application.IRepositories.IFacultyRepos;
+using DormitoryApi.Application.IRepositories.IFloorRepos;
+using DormitoryApi.Application.IRepositories.IRoomRepos;
+using DormitoryApi.Application.IRepositories.IStaffRepos;
+using DormitoryApi.Application.IRepositories.IStudentRepos;
+using DormitoryApi.Domain.Entities.Autho;
+using DormitoryApi.Persistance.Concreates.Repositories.BedRepos;
+using DormitoryApi.Persistance.Concreates.Repositories.DormitoryRepos;
+using DormitoryApi.Persistance.Concreates.Repositories.FacultyRepos;
+using DormitoryApi.Persistance.Concreates.Repositories.FloorRepos;
+using DormitoryApi.Persistance.Concreates.Repositories.RoomRepos;
+using DormitoryApi.Persistance.Concreates.Repositories.StaffRepos;
+using DormitoryApi.Persistance.Concreates.Repositories.StudentRepos;
 using DormitoryApi.Persistance.Configurations;
 using DormitoryApi.Persistance.Context;
 using Microsoft.EntityFrameworkCore;
@@ -18,6 +32,28 @@ namespace DormitoryApi.Persistance.Extentions
             services.AddDbContext<DormitoryDbContext>(options => options.UseSqlServer(Connection.ConnectionStringForDormitoryApiDB));
 
             services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<DormitoryDbContext>();
+
+
+            services.AddScoped<IBedReadRepository, BedReadRepository>();
+            services.AddScoped<IBedWriteRepository, BedWriteRepository>();
+
+            services.AddScoped<IDormitoryReadRepository, DormitoryReadRepository>();
+            services.AddScoped<IDormitoryWriteRepository, DormitoryWriteRepository>();
+
+            services.AddScoped<IFacultyReadRepository, FacultyReadRepository>();
+            services.AddScoped<IFacultyWriteRepository, FacultyWriteRepository>();
+
+            services.AddScoped<IFloorReadRepository, FloorReadRepository>();
+            services.AddScoped<IFloorWriteRepository, FloorWriteRepository>();
+
+            services.AddScoped<IRoomReadRepository, RoomReadRepository>();
+            services.AddScoped<IRoomWriteRepository, RoomWriteRepository>();
+
+            services.AddScoped<IStaffReadRepository, StaffReadRepository>();
+            services.AddScoped<IStaffWriteRepository, StaffWriteRepository>();
+
+            services.AddScoped<IStudentReadRepository, StudentReadRepository>();
+            services.AddScoped<IStudentWriteRepository, StudentWriteRepository>();
         }
     }
 }

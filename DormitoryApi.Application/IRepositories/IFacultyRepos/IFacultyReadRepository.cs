@@ -11,8 +11,4 @@ namespace DormitoryApi.Application.IRepositories.IFacultyRepos
     public interface IFacultyReadRepository : IRepositoryRead<Faculty>
     {
     }
-
-    public interface IFacultyWriteRepository : IRepositoryWrite<Faculty>
-    {
-    }
 }
