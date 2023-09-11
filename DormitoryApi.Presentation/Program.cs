@@ -1,3 +1,4 @@
+using DormitoryApi.Application.AutoMapper;
 using DormitoryApi.Persistance.Extentions;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,7 +7,13 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
+//Persistance Layer Services
 builder.Services.AddPersistanceServices();
+
+
+//Aplication
+builder.Services.AddAutoMapper(typeof(MyProfile));
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

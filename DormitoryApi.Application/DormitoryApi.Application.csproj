@@ -19,4 +19,13 @@
     <ProjectReference Include="..\DormitoryApi.Domain\DormitoryApi.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Abstraction\Services\Infrastructure\" />
+    <Folder Include="Abstraction\Services\Persistance\" />
+    <Folder Include="Models\" />
+    <Folder Include="Extentions\" />
+    <Folder Include="Validation\" />
+    <Folder Include="UnitOfWork\" />
+  </ItemGroup>
+
 </Project>

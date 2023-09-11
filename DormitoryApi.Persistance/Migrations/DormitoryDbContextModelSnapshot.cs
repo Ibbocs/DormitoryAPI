@@ -186,7 +186,7 @@ namespace DormitoryApi.Persistance.Migrations
 
                     b.HasIndex("RoomId");
 
-                    b.ToTable("Beds");
+                    b.ToTable("Beds", (string)null);
                 });
 
             modelBuilder.Entity("DormitoryApi.Domain.Entities.Context.Dormitory", b =>
@@ -214,7 +214,7 @@ namespace DormitoryApi.Persistance.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Dormitories");
+                    b.ToTable("Dormitories", (string)null);
                 });
 
             modelBuilder.Entity("DormitoryApi.Domain.Entities.Context.Faculty", b =>
@@ -239,7 +239,7 @@ namespace DormitoryApi.Persistance.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Faculties");
+                    b.ToTable("Faculties", (string)null);
                 });
 
             modelBuilder.Entity("DormitoryApi.Domain.Entities.Context.Floor", b =>
@@ -269,7 +269,7 @@ namespace DormitoryApi.Persistance.Migrations
 
                     b.HasIndex("DormitoryID");
 
-                    b.ToTable("Floors");
+                    b.ToTable("Floors", (string)null);
                 });
 
             modelBuilder.Entity("DormitoryApi.Domain.Entities.Context.Room", b =>
@@ -303,7 +303,7 @@ namespace DormitoryApi.Persistance.Migrations
 
                     b.HasIndex("FloorId");
 
-                    b.ToTable("Rooms");
+                    b.ToTable("Rooms", (string)null);
                 });
 
             modelBuilder.Entity("DormitoryApi.Domain.Entities.Context.Staff", b =>
@@ -335,7 +335,7 @@ namespace DormitoryApi.Persistance.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Staffs");
+                    b.ToTable("Staffs", (string)null);
                 });
 
             modelBuilder.Entity("DormitoryApi.Domain.Entities.Context.Student", b =>
@@ -373,7 +373,7 @@ namespace DormitoryApi.Persistance.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Students");
+                    b.ToTable("Students", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
