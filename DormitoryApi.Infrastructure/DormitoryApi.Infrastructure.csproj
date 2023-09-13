@@ -14,9 +14,4 @@
     <ProjectReference Include="..\DormitoryApi.Application\DormitoryApi.Application.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Implementations\" />
-    <Folder Include="Extentions\" />
-  </ItemGroup>
-
 </Project>

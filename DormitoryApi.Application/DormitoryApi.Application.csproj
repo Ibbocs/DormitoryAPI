@@ -20,7 +20,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Abstraction\Services\Infrastructure\" />
     <Folder Include="Extentions\" />
     <Folder Include="Validation\" />
   </ItemGroup>

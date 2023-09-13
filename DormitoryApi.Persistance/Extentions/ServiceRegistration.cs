@@ -1,4 +1,5 @@
 ﻿using DormitoryApi.Application.Abstraction.Services.Persistance;
+using DormitoryApi.Application.Abstraction.Services.Persistance.IUserService;
 using DormitoryApi.Application.IRepositories.IBedRepos;
 using DormitoryApi.Application.IRepositories.IDormitoryRepos;
 using DormitoryApi.Application.IRepositories.IFacultyRepos;
@@ -18,7 +19,9 @@ using DormitoryApi.Persistance.Concreates.Repositories.StudentRepos;
 using DormitoryApi.Persistance.Configurations;
 using DormitoryApi.Persistance.Context;
 using DormitoryApi.Persistance.Implementations.Services;
+using DormitoryApi.Persistance.Implementations.Services.UserService;
 using DormitoryApi.Persistance.UnitOfWork;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -35,7 +38,7 @@ namespace DormitoryApi.Persistance.Extentions
         {
             services.AddDbContext<DormitoryDbContext>(options => options.UseSqlServer(Connection.ConnectionStringForDormitoryApiDB));
 
-            services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<DormitoryDbContext>();
+            services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<DormitoryDbContext>().AddDefaultTokenProviders();
 
 
             services.AddScoped<IBedReadRepository, BedReadRepository>();
@@ -62,7 +65,10 @@ namespace DormitoryApi.Persistance.Extentions
             services.AddScoped(typeof(IUnitOfWork<>), typeof(UnitOfWork<>));
 
             //Services
-            //services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IUserService, UserService>();
+            //services.AddScoped<IRoleService, RoleService>();
+
+            services.AddScoped<IAuthoService, AuthService>();
 
 
             services.AddScoped<IBedSevice, BedService>();
