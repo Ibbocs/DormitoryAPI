@@ -24,8 +24,4 @@
     <ProjectReference Include="..\DormitoryApi.Persistance\DormitoryApi.Persistance.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Extentions\" />
-  </ItemGroup>
-
 </Project>
