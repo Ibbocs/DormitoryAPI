@@ -9,8 +9,13 @@ using Microsoft.AspNetCore.HttpLogging;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Serilog.Events;
+using Serilog;
+using System.Collections.ObjectModel;
+using System.Data;
 using System.Security.Claims;
 using System.Text;
+using Serilog.Core;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -106,6 +111,15 @@ builder.Services.AddSwaggerGen(swagger =>
                     }
                 });
 });
+
+
+Logger? log = new LoggerConfiguration()
+    .WriteTo.Console()
+    .WriteTo.File("Logs/mylog-{Date}.txt")
+    .MinimumLevel.Information()
+    .CreateLogger();
+
+builder.Host.UseSerilog(log);
 
 var app = builder.Build();
 
