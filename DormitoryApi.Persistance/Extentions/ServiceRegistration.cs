@@ -66,7 +66,7 @@ namespace DormitoryApi.Persistance.Extentions
 
             //Services
             services.AddScoped<IUserService, UserService>();
-            //services.AddScoped<IRoleService, RoleService>();
+            services.AddScoped<IRoleService, RoleService>();
 
             services.AddScoped<IAuthoService, AuthService>();
 
